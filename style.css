@@ -1,0 +1,135 @@
+/*I left some comments here, so you can se what I tried to work with.
+I didn't get the margins for the boxes in Different teas and Locations to be exact as in the redline.*/
+
+body {
+  margin 0;
+  width: 1200px;
+  background-color: black;
+  opacity: 0.9;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 50px;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+.header {
+  height: 69px;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo .navigation {
+  display: flex;
+  align-items: start;
+  margin: auto 0%;
+}
+
+.mission {
+  border: solid black 1px; /*Needs to bee here, otherwise the text collapses. */
+  width: 1200px;
+  height: 700px;
+  margin-top: 95px;
+  background-image: url("img-mission-background.jpg");
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;*/
+  }
+
+h2, h4 {
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  padding: 10px;
+}
+
+.black-background {
+  width: 100%;
+  background-color: black;
+  margin: 25% auto;
+  }
+
+.selected-teas {
+  /*border: solid yellow 2px;*/
+  width: 1000px;
+  margin: auto;
+  /*display: inline-block;*/
+}
+
+.different-teas {
+  /*border: solid yellow 2px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.tea {
+  /*border: solid yellow 2px;*/
+  font-weight: bold;
+}
+
+.locations {
+  width: 100%;
+  height: 500px;
+  background-image: url("img-locations-background.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  }
+
+.location {
+  width: 300px;
+  background-color: black;
+  display: inline-block;
+  margin: 15px 40px;
+  opacity: 1;
+}
+
+.adress li {
+  display: block;
+  margin: 10px;
+  }
+
+.footer {
+  /*border: solid yellow 2px;*/
+  height: 200px;
+  width: 100%;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+}
